@@ -16,7 +16,7 @@
             <div class="post-content">
                 {{ post.body }}
             </div>
-            {% if not config.params.nocomments  %}
+            {% if config.params.comments  %}
             <div class="post-comments">
                 {{ render_disqus_comments() }}
             </div>
