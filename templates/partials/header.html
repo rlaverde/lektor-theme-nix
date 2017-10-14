@@ -19,7 +19,7 @@
 				</li>
 				{% for page in site.query('/') %}
 				<li >
-					<a href="{{page.url_to_path | url }}">~/{{ page.path }}</a>
+					<a href="{{page.url_path | url }}">~/{{ page.path }}</a>
 				</li>
 				{% endfor %}
 
