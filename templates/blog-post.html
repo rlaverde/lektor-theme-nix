@@ -1,27 +1,27 @@
+{% from "macros/pagination.html" import render_pagination %}
 <!DOCTYPE html>
 <html>
 
     <head>
-        <title> {{ .Title }} &middot; {{ .Site.Title }} </title>
+        <title> {{ this.title }} &middot; {{ config.project.name }} </title>
 
-        {{ partial "head.html" . }}
+        {% include "partials/head.html" %}
     </head>
 
     <body>
-        {{ partial "header.html" . }}
+        {% include "partials/header.html" %}
         <div class="container wrapper">
-            <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-            <span class="post-date">{{ .Date.Format "Jan 2, 2006 " }}</span>
+            <h1><a href="{{ post|url }}">{{ post.title }</a></h1>
+            <span class="post-date">{{ post.pub_date.strftime('%b %d, %Y') }}</span>
             <div class="post-content">
-                {{ .Content }}
+                {{ post.body }}
             </div>
-            {{ if (isset .Params "nocomments")  }}
-            {{ else }}
+            {% if not config.params.nocomments  %}
             <div class="post-comments">
-                {{ template "_internal/disqus.html" . }}
+                {{ render_disqus_comments() }}
             </div>
-            {{ end }}
+            {% endif %}
             <div class="push"></div>
         </div>
-        {{ partial "footer.html" . }}
+        {% include "partials/footer.html" %}
     </body>
