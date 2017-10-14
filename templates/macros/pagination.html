@@ -2,7 +2,7 @@
 {% if pagination.pages > 1 %}
 <div class="pagination-wrapper text-center">
   <ul class="pagination">
-      {% with first = pagination.for_page(0) }} %}
+      {% with first = pagination.for_page(0) %}
       <li>
           <a href="{{ first|url }}" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
       </li>
