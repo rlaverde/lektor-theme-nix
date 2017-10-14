@@ -13,7 +13,7 @@ Add lektor-disqus-comments plugin an configure it https://github.com/lektor/lekt
 Add params in the `.lektorproject file`
 
 ```ini
-[params]
+[theme_settings]
   githubID = "your_github"
   gitlabId = "your_gitlab"
   twitterID = "your_twitter"

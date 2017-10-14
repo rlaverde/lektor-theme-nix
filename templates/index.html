@@ -9,57 +9,57 @@
 	<body>
 		{% include "partials/header.html" %}
 		<div class="container wrapper">
-			{% if config.params.profilepicture %}
+			{% if config.THEME_SETTINGS.profilepicture %}
 			<div class="row">
 			    <div class="col-sm-3 col-centered">
-			        <img alt="profile-picture" class="img-responsive img-circle user-picture" src="{{ config.params.profilepicture | asseturl }}">
+			        <img alt="profile-picture" class="img-responsive img-circle user-picture" src="{{ config.THEME_SETTINGS.profilepicture | asseturl }}">
 			    </div>
 			</div>
 			{% endif %}
 			<div class="row">
 				<div class="col-xs-12 user-profile text-center">
-					<h1 id="user-name">{{ config.params.name | upper }}</h1>
+					<h1 id="user-name">{{ config.THEME_SETTINGS.name | upper }}</h1>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-12 user-social text-center">
 
-					{% if config.params.slackURL %}
-					<a href="{{ config.params.slackURL }}" title="Slack"><i class="fa fa-slack fa-3x" aria-hidden="true"></i></a>
+					{% if config.THEME_SETTINGS.slackURL %}
+					<a href="{{ config.THEME_SETTINGS.slackURL }}" title="Slack"><i class="fa fa-slack fa-3x" aria-hidden="true"></i></a>
 					{% endif %}
-					{% if config.params.twitterID %}
-					<a href="https://twitter.com/{{ config.params.twitterID }}" title="Twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+					{% if config.THEME_SETTINGS.twitterID %}
+					<a href="https://twitter.com/{{ config.THEME_SETTINGS.twitterID }}" title="Twitter"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
 					{% endif %}
-					{% if config.params.googleplusID %}
-					<a href="https://plus.google.com/{{ config.params.googleplusID }}/about" title="Google+"><i class="fa fa-google-plus fa-3x" aria-hidden="true"></i></a>
+					{% if config.THEME_SETTINGS.googleplusID %}
+					<a href="https://plus.google.com/{{ config.THEME_SETTINGS.googleplusID }}/about" title="Google+"><i class="fa fa-google-plus fa-3x" aria-hidden="true"></i></a>
 					{% endif %}
-					{% if config.params.facebookID %}
-					<a href="https://facebook.com/{{ config.params.facebookID }}" title="Facebook"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
+					{% if config.THEME_SETTINGS.facebookID %}
+					<a href="https://facebook.com/{{ config.THEME_SETTINGS.facebookID }}" title="Facebook"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a>
 					{% endif %}
-					{% if config.params.githubID %}
-					<a href="https://github.com/{{ config.params.githubID }}" title="GitHub"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+					{% if config.THEME_SETTINGS.githubID %}
+					<a href="https://github.com/{{ config.THEME_SETTINGS.githubID }}" title="GitHub"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
 					{% endif %}
-					{% if config.params.gitlabId %}
-					<a href="https://gitlab.com/{{ config.params.gitlabId }}" title="GitLab"><i class="fa fa-gitlab fa-3x" aria-hidden="true"></i></a>
+					{% if config.THEME_SETTINGS.gitlabId %}
+					<a href="https://gitlab.com/{{ config.THEME_SETTINGS.gitlabId }}" title="GitLab"><i class="fa fa-gitlab fa-3x" aria-hidden="true"></i></a>
 					{% endif %}
-					{% if config.params.codepenID %}
-					<a href="https://codepen.io/{{ config.params.codepenID }}" title="Codepen"><i class="fa fa-codepen fa-3x" aria-hidden="true"></i></a>
+					{% if config.THEME_SETTINGS.codepenID %}
+					<a href="https://codepen.io/{{ config.THEME_SETTINGS.codepenID }}" title="Codepen"><i class="fa fa-codepen fa-3x" aria-hidden="true"></i></a>
 					{% endif %}
-					{% if config.params.linkedInID %}
-					<a href="http://linkedin.com/in/{{ config.params.linkedInID }}" title="LinkedIn"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+					{% if config.THEME_SETTINGS.linkedInID %}
+					<a href="http://linkedin.com/in/{{ config.THEME_SETTINGS.linkedInID }}" title="LinkedIn"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
 					{% endif %}
-					{% if config.params.instagramID %}
-					<a href="https:/instagram.com/{{ config.params.instagramID }}" title="Instagram"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+					{% if config.THEME_SETTINGS.instagramID %}
+					<a href="https:/instagram.com/{{ config.THEME_SETTINGS.instagramID }}" title="Instagram"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
 					{% endif %}
-					{% if config.params.email %}
-					<a href="mailto:{{ config.params.email }}" title="Email"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+					{% if config.THEME_SETTINGS.email %}
+					<a href="mailto:{{ config.THEME_SETTINGS.email }}" title="Email"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
 					{% endif %}
 
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-md-offset-4 user-description text-center">
-					<p>{{ config.params.about }}</p>
+					<p>{{ config.THEME_SETTINGS.about }}</p>
 				</div>
 			</div>
 			<div class="push"></div>

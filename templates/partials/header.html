@@ -8,14 +8,14 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" id="green-terminal" href={{ '/'|url }}>{{config.params.headerusername}}@{{config.params.headerhostname}} ~ $</a>
+			<a class="navbar-brand" id="green-terminal" href={{ '/'|url }}>{{config.THEME_SETTINGS.headerusername}}@{{config.THEME_SETTINGS.headerhostname}} ~ $</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
 				<li>
-					<a href={{ '/'|url }}>/home/{{config.params.headerusername}}</a>
+					<a href={{ '/'|url }}>/home/{{config.THEME_SETTINGS.headerusername}}</a>
 				</li>
 				{% for page in site.query('/') %}
 				<li >
