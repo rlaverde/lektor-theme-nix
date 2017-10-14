@@ -11,6 +11,7 @@
     <body>
         {% include "partials/header.html" %}
         <div class="container wrapper">
+        {% with post = this %}
             <h1><a href="{{ post|url }}">{{ post.title }}</a></h1>
             <span class="post-date">{{ post.pub_date.strftime('%b %d, %Y') }}</span>
             <div class="post-content">
@@ -22,6 +23,7 @@
             </div>
             {% endif %}
             <div class="push"></div>
+        {% endwith %}
         </div>
         {% include "partials/footer.html" %}
     </body>
