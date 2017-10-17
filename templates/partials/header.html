@@ -18,9 +18,11 @@
 					<a href={{ '/'|url }}>/home/{{config.THEME_SETTINGS.headerusername}}</a>
 				</li>
 				{% for page in site.query('/') %}
+				{% if page.path != '/404' %}
 				<li >
 					<a href="{{page.url_path | url }}">~{{ page.path }}</a>
 				</li>
+				{% endif %}
 				{% endfor %}
 
 			</ul>
