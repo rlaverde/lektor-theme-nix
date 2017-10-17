@@ -1,29 +1,29 @@
 {% from "macros/pagination.html" import render_pagination %}
 <!DOCTYPE html>
 <html>
+  <head>
+      <title> {{ this.title }} &middot; {{ config.PROJECT.name }} </title>
 
-    <head>
-        <title> {{ this.title }} &middot; {{ config.PROJECT.name }} </title>
+      {% include "partials/head.html" %}
+  </head>
 
-        {% include "partials/head.html" %}
-    </head>
-
-    <body>
-        {% include "partials/header.html" %}
-        <div class="container wrapper">
-        {% with post = this %}
-            <h1><a href="{{ post|url }}">{{ post.title }}</a></h1>
-            <span class="post-date">{{ post.pub_date.strftime('%b %d, %Y') }}</span>
-            <div class="post-content">
-                {{ post.body }}
-            </div>
-            {% if config.THEME_SETTINGS.comments  %}
-            <div class="post-comments">
-                {{ render_disqus_comments() }}
-            </div>
-            {% endif %}
-            <div class="push"></div>
-        {% endwith %}
-        </div>
-        {% include "partials/footer.html" %}
-    </body>
+  <body>
+      {% include "partials/header.html" %}
+      <div class="container wrapper">
+      {% with post = this %}
+          <h1><a href="{{ post|url }}">{{ post.title }}</a></h1>
+          <span class="post-date">{{ post.pub_date.strftime('%b %d, %Y') }}</span>
+          <div class="post-content">
+              {{ post.body }}
+          </div>
+          {% if config.THEME_SETTINGS.comments  %}
+          <div class="post-comments">
+              {{ render_disqus_comments() }}
+          </div>
+          {% endif %}
+          <div class="push"></div>
+      {% endwith %}
+      </div>
+      {% include "partials/footer.html" %}
+  </body>
+</html>
