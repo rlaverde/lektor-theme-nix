@@ -51,6 +51,9 @@
           {% if config.THEME_SETTINGS.instagramID %}
             <a href="https://instagram.com/{{ config.THEME_SETTINGS.instagramID }}" title="Instagram"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
           {% endif %}
+          {% if config.THEME_SETTINGS.telegramID %}
+            <a href="https://t.me/{{ config.THEME_SETTINGS.telegramID }}" title="Telegram"><i class="fa fa-telegram fa-3x" aria-hidden="true"></i></a>
+          {% endif %}
           {% if config.THEME_SETTINGS.email %}
             <a href="mailto:{{ config.THEME_SETTINGS.email }}" title="Email"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
           {% endif %}
