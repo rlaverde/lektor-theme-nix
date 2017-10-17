@@ -16,7 +16,7 @@
           <div class="post-content">
               {{ post.body }}
           </div>
-          {% if config.THEME_SETTINGS.comments  %}
+          {% if config.THEME_SETTINGS.comments == 'yes' %}
           <div class="post-comments">
               {{ render_disqus_comments() }}
           </div>

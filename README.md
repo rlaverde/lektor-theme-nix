@@ -31,7 +31,7 @@ Add params in the `.lektorproject file`
   profilepicture = "profile_picture_asset_url"
   googleanalytics = "your_google_analytics_id"
   slackURL = "https://join.slack.com/..."
-  comments = "True"
+  comments = "yes"
 ```
 
 Add your proofile picture in the assets folder and set the path in `profilepicture` (e.g. `img/myprofilepicture.png`)
