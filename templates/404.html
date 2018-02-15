@@ -9,9 +9,17 @@
   <body>
     {% include "partials/header.html" %}
     <div class="container wrapper">
-      <h1>Uhm... WHAT?</h1>
+        {% if this.title %}
+          <h1>{{ this.title }}</h1>
+        {% else %}
+          <h1>Uhm... WHAT?</h1>
+        {% endif %}
       <div class="post-content">
-        <p>Looks like you're lost. This page doesn't exist</p>
+        {% if this.body %}
+          {{ this.body }}
+        {% else %}
+          <p>Looks like you're lost. This page doesn't exist.</p>
+        {% endif %}
       </div>
       <div class="push"></div>
     </div>
