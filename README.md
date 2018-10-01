@@ -14,24 +14,24 @@ Add params in the `.lektorproject file`
 
 ```ini
 [theme_settings]
-  githubID = "your_github"
-  gitlabId = "your_gitlab"
-  twitterID = "your_twitter"
-  codepenID = "your_codepen"
-  linkedInID = "your_linkedin"
-  googleplusID = "your_googleplus"
-  facebookID = "your_facebook"
-  instagramID = "your_instagram"
-  telegramID = "your_telegram"
-  name = "your_name"
-  headerusername = "username"
-  headerhostname = "hostname"
-  email = "your_email"
-  about = "info_about_you"
-  profilepicture = "profile_picture_asset_url"
-  googleanalytics = "your_google_analytics_id"
-  slackURL = "https://join.slack.com/..."
-  comments = "yes"
+githubID = your_github
+gitlabId = your_gitlab
+twitterID = your_twitter
+codepenID = your_codepen
+linkedInID = your_linkedin
+googleplusID = your_googleplus
+facebookID = your_facebook
+instagramID = your_instagram
+telegramID = your_telegram
+name = your_name
+headerusername = username
+headerhostname = hostname
+email = your_email
+about = info_about_you
+profilepicture = profile_picture_asset_url
+googleanalytics = your_google_analytics_id
+slackURL = https://join.slack.com/...
+comments = yes
 ```
 
 Add your proofile picture in the assets folder and set the path in `profilepicture` (e.g. `img/myprofilepicture.png`)
