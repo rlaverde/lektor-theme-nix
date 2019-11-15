@@ -23,6 +23,7 @@ googleplusID = your_googleplus
 facebookID = your_facebook
 instagramID = your_instagram
 telegramID = your_telegram
+keybaseID = your_keybase
 name = your_name
 headerusername = username
 headerhostname = hostname

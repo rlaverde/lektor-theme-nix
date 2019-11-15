@@ -19,6 +19,9 @@
 {% if config.THEME_SETTINGS.codepenID %}
   <a href="https://codepen.io/{{ config.THEME_SETTINGS.codepenID }}" title="Codepen"><i class="fab fa-codepen fa-3x" aria-hidden="true"></i></a>
 {% endif %}
+{% if config.THEME_SETTINGS.keybaseID %}
+  <a href="https://keybase.io/{{ config.THEME_SETTINGS.keybaseID }}" title="Keybase"><i class="fab fa-keybase fa-3x" aria-hidden="true"></i></a>
+{% endif %}
 {% if config.THEME_SETTINGS.linkedInID %}
   <a href="https://linkedin.com/in/{{ config.THEME_SETTINGS.linkedInID }}" title="LinkedIn"><i class="fab fa-linkedin fa-3x" aria-hidden="true"></i></a>
 {% endif %}
