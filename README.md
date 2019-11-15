@@ -29,6 +29,7 @@ headerhostname = hostname
 email = your_email
 about = info_about_you
 profilepicture = profile_picture_asset_url
+faviconurl = favicon_asset_url
 googleanalytics = your_google_analytics_id
 slackURL = https://join.slack.com/...
 comments = yes
